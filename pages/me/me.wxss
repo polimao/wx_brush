@@ -1,0 +1,80 @@
+.start-btn{
+    padding: 0 100rpx;
+}
+
+/**index.wxss**/
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.container{
+    background: #2c343c;
+}
+
+#mychart-gauge{
+        /* width: 740rpx; */
+    height: 540rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2c343c;
+}
+#complete-chart{
+    width: 740rpx;
+    height: 740rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 50px; */
+    color: #fff;
+}
+/* #complete-chart .complete-title{
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+    height: 40px;
+} */
+
+.muti-btn {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+
+.muti-btn span{
+    border-right: 1px solid #ccc;
+    padding:0.5em 0.5em;
+    display: block;
+    float: left;
+}
+
+.muti-btn span:nth-last-child(1){
+    border-right: none;
+}
+
+.muti-btn span.selected{
+    background:#aaa;
+    color:#000;
+}

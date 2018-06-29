@@ -1,0 +1,10 @@
+
+{
+    "backgroundTextStyle": "white",
+    "navigationBarBackgroundColor": "#2c343c",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "ec-canvas": "../../ec-canvas/ec-canvas"
+    }
+}

@@ -1,0 +1,51 @@
+<page>
+    <view id="down-search">
+        <view class="search">
+            <input placeholder="搜索" />
+        </view>
+        <view class="option">
+            <!-- <span bindtap="setSort"><image src="../image/sort.png" mode="widthFix"></image></span> -->
+            <span class="selected"><image src="../image/category.png" mode="widthFix" bindtap="openMovieSearch"></image></span>
+            <span bindtap="setBehavoir"><image src="../image/collection.png" mode="widthFix"></image></span>
+        </view>
+    </view>
+
+    <view id="movie-search" style="display:{{ open_movie_search ? 'none': 'block'}};">
+        <view class="left"><text>类型</text></view>
+
+        <view class="right">
+            <button class="movie-type-button" size="mini" wx:for="{{ types }}" wx:for-item="type">{{ type }}</button>
+        </view>
+        <view class="space"></view>
+        <view class="left"><text>区域</text></view>
+        <view class="right">
+            <button class="movie-area-button" size="mini" wx:for="{{ areas }}" wx:for-item="area">{{ area }}</button>
+        </view>
+        <view class="space"></view>
+        <view class="left"><text>排序</text></view>
+        <view class="right">
+            <button size="mini">评分最高</button>
+            <button size="mini">评分最低</button>
+        </view>
+        <view class="space"></view>
+        <view class="right foot">
+
+            <button type="primary" size="mini" bindtap="openMovieSearch">确定</button>
+            <button type="warn" size="mini" bindtap="openMovieSearch">取消</button>
+        </view>
+    </view>
+
+
+    <view id="movie-box">
+        <view class="movie-item" wx:for="{{movies}}" wx:key="id" wx:for-index="index" wx:for-item="movie" bindtap="setSeleted" data-index="{{ index }}">
+
+            <view class="movie-image">
+                <image src="{{ movie.cover }}" mode="aspectFill"></image>
+                <checkbox class="movie-checkbox" value="{{ movie.id }}" checked="{{movie.selected}}" />
+            </view>
+            <view class="movie-title"> {{ movie.title }} - {{ movie.rate}}
+
+            </view>
+        </view>
+    </view>
+</page>

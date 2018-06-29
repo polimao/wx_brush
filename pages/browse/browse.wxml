@@ -1,0 +1,25 @@
+<view class="banner screen">
+    <view class="classname">
+
+        <navigator url="../brush/brush">
+            <image src="../image/movieHL.png" mode="widthFix"></image>影馆<text>73020</text>
+        </navigator>
+    </view>
+</view>
+<view class="banner seen">
+    <view class="lmp">
+        <navigator><image src="../image/seenHL.png" mode="widthFix"></image>看过<text>523</text></navigator>
+        <navigator><image src="../image/flower1HL.png" mode="widthFix"></image>好评<text>77</text></navigator>
+        <navigator><image src="../image/shitHL.png" mode="widthFix"></image>差评<text>10</text></navigator>
+    </view>
+
+</view>
+<view class="banner ban">
+    <navigator><image src="../image/banHL.png" mode="widthFix"></image>不看<text>1030</text></navigator>
+</view>
+<view class="banner add">
+    <navigator>+<text class="iconfont icon-sousuo"></text>
+
+    </navigator>
+</view>
+

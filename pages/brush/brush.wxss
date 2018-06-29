@@ -1,0 +1,187 @@
+/* pages/brush/brush.wxss */
+
+#movie-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 80rpx;
+}
+
+#movie-box .movie-item {
+    margin: 10rpx 30rpx;
+    align-items: center;
+    /* border: 1px solid red; *//* width:200rpx; */
+    width: 25%;
+    font-size: 20rpx;
+    line-height: 30rpx;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+}
+
+#movie-box .movie-item .movie-image {
+    height: 272rpx;
+    /* box-shadow: 0rpx 0rpx 1rpx red; */
+}
+
+#movie-box .movie-item .movie-image image {
+    width: 100%;
+    height: 100%;
+    /* height: 272rpx;  */
+}
+
+#movie-box .movie-item .movie-checkbox {
+    position: absolute;
+    right: -4rpx;
+    bottom: 46rpx;
+    display: block;
+    /* opacity:0.6;  */
+}
+
+/* 
+
+#movie-footer {
+    position: fixed;
+    top: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #fff;
+}
+
+#movie-footer view {
+    flex-grow: 1;
+    width: 100rpx;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    line-height: 100rpx;
+    font-size: 30rpx;
+}
+
+#movie-footer view:last-child {
+    border-right: none;
+} */
+
+/* ------------------------------------------------------------------ */
+
+#movie-search {
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 0rpx 0rpx 10rpx 10rpx;
+}
+
+#movie-search .left {
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+#movie-search .left text {
+    /* line-height: 100%; */
+    margin: auto 0;
+}
+
+#movie-search .right {
+    width: 80%;
+    float: right;
+    /* padding: 20rpx 20rpx; */
+}
+
+#movie-search .space {
+    width: 100%;
+    float: left;
+    height: 20rpx;
+}
+
+#movie-search .right.foot button {
+    float: right;
+    margin-right: 30rpx;
+}
+
+#movie-search .movie-type-button {
+    padding: 0 1em;
+    background-color: #fff;
+    float: left;
+}
+
+#movie-search .movie-area-button {
+    padding: 0 1em;
+    background-color: #fff;
+    float: left;
+}
+
+/* ------------------------------------------------------------------ */
+
+#down-search {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80rpx;
+    /* text-align: center; */
+    font-size: 0.5em;
+    line-height: 1em;
+    border-bottom: #489 solid 1rpx;
+    z-index: 1000;
+    background-color: #aaa;
+}
+
+#down-search .search {
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; *//* border-right: #ddd solid 1rpx;  */
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#down-search .search input {
+    /* background-color: red; */
+    margin: auto;
+    padding-left: 20px;
+    font-size: 2em;
+}
+
+#down-search .option {
+    width: 30%;
+    height: 100%;
+    /* background-color: yellow; */
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#down-search .option span {
+    padding: 12rpx 12rpx;
+    margin: auto;
+    font-size: 3em;
+    border: #ddd 1px solid;
+    border-radius: 15rpx 15rpx;
+}
+
+#down-search .option span image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+/* 
+#down-search .option span.selected {
+    background-color: #eee;
+    border-radius: 15rpx 15rpx;
+} */
+
+/* ------------------------------------------------------------------ */

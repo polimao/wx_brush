@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wxcca860584f509d4d",
+	"projectname": "%E5%88%B7%E7%94%B5%E5%BD%B1",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "browse",
+					"pathName": "pages/browse/browse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "yaomeng",
+					"pathName": "pages/yaomeng/yaomeng",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": ""
+				}
+			]
+		}
+	}
+}

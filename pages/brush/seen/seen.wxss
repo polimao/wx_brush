@@ -1,0 +1,21 @@
+/* pages/brush/seen/seen.wxss */
+
+.box{
+
+    display: flex;
+    justify-content: space-between; 
+    flex-flow: row wrap;
+}
+.v{ 
+    background-color: #ddd;
+    margin: 20rpx;
+    align-items: center; 
+    font-size: 36rpx;
+    border: 1px solid red;
+    /* width:200rpx; */
+    width: 26%;
+}
+image{
+    /* display: inline; */
+     width: 100%; 
+}

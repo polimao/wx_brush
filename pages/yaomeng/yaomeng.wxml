@@ -1,0 +1,125 @@
+<page>
+    <!-- <view id="down-search">
+        <view class="option">
+            <span class="selected"><image src="../image/category.png" mode="widthFix" bindtap="openMovieSearch"></image></span>
+            <span bindtap="setBehavoir"><image src="../image/collection.png" mode="widthFix"></image></span>
+        </view>
+    </view> -->
+
+
+    <view id="search-bar">
+        <view class="search-input">
+            <input placeholder="搜索电影"></input>
+        </view>
+        <div class="filter" bindtap="toggleMovieSearch">
+            <image src="../image/category.png" mode="widthFix"></image>
+        </div>
+        <div class="sort">
+            <image src="../image/sort.png" mode="widthFix"></image>
+        </div>
+        <div class="mark">
+            <image src="../image/collection.png" mode="widthFix"></image>
+        </div>
+        <!-- <div class="skin_pop">
+                <div class="skin_pop_inner">
+                    <div class="skin_pop_bd">
+                        <a href="/wxopen/devprofile?action=get_profile&amp;token=1359948880&amp;lang=zh_CN" title="杀电影" class="user_name">杀电影</a>
+                    </div>
+                    <div class="skin_pop_ft">
+                        <a class="javascript:;" id="logout" href="/wxopen/walogout?lang=zh_CN&amp;token=1359948880">退出</a>
+                    </div>
+                </div>
+                <i class="icon_skin_pop_arrow"></i>
+            </div> -->
+    </view>
+    <view id="filter-bar"style="display:{{ open_movie_search ? 'block': 'none'}};">
+        <!-- <view class="left"><text>标记</text></view>
+        <view class="right">
+            <button size="mini">未标记</button>
+            <button size="mini">好评</button>
+            <button size="mini">差评</button>
+            <button size="mini">收藏</button>
+            <button size="mini">不看</button>
+        </view> -->
+        <view class="area">
+            <view class="left">
+                <button size="mini" style="color:#888888;" bindtap="toggleMovieSearch">取消</button>
+            </view>
+
+            <view class="right">
+                <button size="mini" style="float:right;color:#4FAA38;" bindtap="toggleMovieSearch">确定</button>
+            </view>
+        </view>
+        <view class="area">
+            <view class="left">
+                <text>类型</text>
+            </view>
+
+            <view class="right">
+                <button size="mini">全部</button>
+                <button size="mini" wx:for="{{ types }}" wx:for-item="type">{{ type }}</button>
+            </view>
+        </view>
+
+        <view class="area">
+            <view class="left"><text>区域</text></view>
+            <view class="right">
+                <button size="mini">全部</button>
+                <button size="mini" wx:for="{{ areas }}" wx:for-item="area">{{ area }}</button>
+            </view>
+            <!-- <view class="area">
+            <view class="left"><text>排序</text></view>
+            <view class="right">
+                <button size="mini">评分高</button>
+                <button size="mini">评分低</button>
+                <button size="mini">时间近</button>
+                <button size="mini">时间远</button>
+            </view> -->
+        </view>
+        <view class="area">
+            <view class="left"><text>评分</text></view>
+            <view class="right">
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                    <view class="picker">
+                        <view wx:if="{{ multiArray[0][multiIndex[0]] == multiArray[1][multiIndex[1]] }}">={{ multiArray[0][multiIndex[0]] }}分</view>
+                        <view wx:else>{{multiArray[0][multiIndex[0]]}} ~ {{multiArray[1][multiIndex[1]]}} 分</view>
+                        
+                    </view>
+                </picker>
+                <!-- <slider bindchange="slider2change" show-value step="1" min="0" max="10" width="50%"/>
+                <slider bindchange="slider2change" show-value step="1" min="0" max="10" width="50%"/> -->
+            </view>
+        </view>
+        <!-- <view class="space"></view>  todo 第二期再做
+        <view class="left"><text>模式</text></view>
+        <view class="right">
+            <button size="mini">批量标记</button>
+            <button size="mini">逐个标记</button>
+        </view>
+        <view class="space"></view> -->
+        <!-- <view class="left"><text>搜索</text></view>
+        <view class="right search">
+            <input placeholder="搜索" />
+        </view> -->
+        <!-- <view class="space"></view> -->
+        <!-- <view class="right foot">
+
+            <button type="primary" size="mini" bindtap="toggleMovieSearch">确定</button>
+            <button type="warn" size="mini" bindtap="toggleMovieSearch">取消</button>
+        </view> -->
+    </view>
+
+
+    <view id="movie-box">
+        <view class="movie-item" wx:for="{{movies}}" wx:key="id" wx:for-index="index" wx:for-item="movie" bindtap="setSeleted" data-index="{{ index }}">
+
+            <view class="movie-image">
+                <image src="{{ movie.cover }}" mode="aspectFill"></image>
+                <checkbox class="movie-checkbox" value="{{ movie.id }}" checked="{{movie.selected}}" />
+            </view>
+            <view class="movie-title"> {{ movie.title }} 豆瓣：{{ movie.rate}}
+
+            </view>
+        </view>
+    </view>
+</page>

@@ -1,0 +1,31 @@
+
+
+
+
+// ,
+// "tabBar": {
+//     "color": "#dddddd",
+//     "selectedColor": "#1296db",
+//     "borderStyle": "black",
+//     "backgroundColor": "#fff",
+//     "list": [
+//         {
+//             "pagePath": "pages/yaomeng/yaomeng",
+//             "text": "瑶梦",
+//             "iconPath": "pages/image/move.png",
+//             "selectedIconPath": "pages/image/moveHL.png"
+//         },
+//         {
+//             "pagePath": "pages/browse/browse",
+//             "text": "过电影",
+//             "iconPath": "pages/image/movie.png",
+//             "selectedIconPath": "pages/image/movieHL.png"
+//         },
+//         {
+//             "pagePath": "pages/me/me",
+//             "text": "我",
+//             "iconPath": "pages/image/me.png",
+//             "selectedIconPath": "pages/image/meHL.png"
+//         }
+//     ]
+// }

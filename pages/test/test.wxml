@@ -1,0 +1,16 @@
+<picker range="{{sourceType}}" bindchange="sourceTypeChange" value="{{sourceTypeIndex}}">
+    <view class="page-body-form-picker">
+        <view class="page-body-form-picker-key">类型</view>
+        <view class="page-body-form-picker-value">{{sourceType[sourceTypeIndex]}}</view>
+    </view>
+</picker>
+<picker range="{{sizeType}}" bindchange="sizeTypeChange" value="{{sizeTypeIndex}}" >
+    <view class="page-body-form-picker">
+         <view class="page-body-form-picker-key">地区</view> 
+        <view class="page-body-form-picker-value">{{sizeType[sizeTypeIndex]}}</view>
+    </view>
+</picker>
+
+
+<i class="icon"></i>
+<span class="demoSpan1"/>

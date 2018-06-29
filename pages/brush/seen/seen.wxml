@@ -1,0 +1,21 @@
+<!--pages/brush/seen/seen.wxml-->
+<text>pages/brush/seen/seen.wxml</text>
+
+<view class="box">
+    <view class="v" wx:for="{{test}}">
+        <view class="classname">
+            <image src=""mode="widthFix"></image>
+        </view>
+        <view class="classname"> {{index}}:{{item}}
+            <block wx:if="{{(index+1) % 3 == 0}}">
+                T
+
+            </block>
+        </view>
+
+
+
+
+
+    </view>
+</view>

@@ -1,0 +1,25 @@
+{
+    "pages": [
+        "pages/yaomeng/yaomeng",
+        "pages/browse/browse",
+        "pages/brush/brush",
+        "pages/me/me",
+        "pages/logs/logs",
+        "pages/brush/great/great",
+        "pages/brush/ban/ban",
+        "pages/brush/pit/pit",
+        "pages/test/test"
+    ],
+    "window": {
+        "backgroundTextStyle": "#000",
+        "navigationBarBackgroundColor": "#1296db",
+        "navigationBarTitleText": "摇梦",
+        "navigationBarTextStyle": "#000"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    }
+}

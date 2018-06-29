@@ -1,0 +1,30 @@
+<!--index.wxml-->
+
+<view class="container">
+    <navigator url="../yaomeng/yaomeng">
+        <ec-canvas id="mychart-gauge" canvas-id="mychart-gauge" ec="{{ ec2 }}"></ec-canvas> 
+    </navigator>
+    
+
+    <view  bindtap="bindViewTap" class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+         <text class="userinfo-nickname">{{userInfo.nickName}}</text> 
+
+    </view>
+
+    <view class="start-btn">
+        <navigator url="../yaomeng/yaomeng">
+            <button type="primary" plain>开始标记</button>
+        </navigator>
+    </view>
+
+    <view class="muti-btn">
+        <!-- <span class="selected">我看过</span>
+        <span>好评</span>
+        <span>差评</span>
+        <span>收藏</span> -->
+    </view>
+
+    <!-- <ec-canvas id="complete-chart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas> -->
+</view>
+
